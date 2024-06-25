@@ -1,0 +1,85 @@
+/* Rectangle 5 */
+
+position: absolute;
+width: 568px;
+height: 487px;
+left: 47px;
+top: 219px;
+
+background: rgba(142, 160, 160, 0.17);
+border-radius: 33px;
+/* We are NAAC Accredited! Open Doors To A Brighter Tomorrow With Our World Class Academics. */
+
+position: absolute;
+width: 525px;
+height: 184px;
+left: 80px;
+top: 241px;
+
+font-family: 'Sahitya';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 56px;
+text-align: center;
+letter-spacing: -0.03em;
+
+color: #7A3529;
+
+/* CIEM presents an array of opportunities for students to grow academically well rounded. Starting from excellent courses across diverse domains, expert faculties, best in class infrastructure, here at CIEM we nurture our students into industry ready individuals, equipped with the right skills, to shape a brighter tomorrow. */
+
+position: absolute;
+width: 451px;
+height: 185px;
+left: calc(50% - 451px/2 - 377.5px);
+top: 428px;
+
+font-family: 'Saira SemiCondensed';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+text-align: center;
+letter-spacing: -0.03em;
+/* Rectangle 5 */
+
+position: absolute;
+width: 568px;
+height: 487px;
+left: 47px;
+top: 219px;/* Rectangle 3 */
+
+position: absolute;
+width: 308px;
+height: 99px;
+left: 172px;
+top: 589px;
+
+background: #5C7AE7;
+border-radius: 28px;
+/* Take Admission */
+
+position: absolute;
+width: 243px;
+height: 63px;
+left: 205px;
+top: 607px;
+
+font-family: 'Saira SemiCondensed';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 63px;
+/* identical to box height */
+letter-spacing: -0.03em;
+
+color: #FFFFFF;
+
+
+
+background: rgba(142, 160, 160, 0.17);
+border-radius: 33px;
+
+color: #000000;
+
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
