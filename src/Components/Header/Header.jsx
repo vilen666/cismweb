@@ -9,25 +9,25 @@ const Header=()=>{
       },
       {
         id:"Courses",
-        ref:"/Courses",
+        ref:"/courses",
       },
       {
         id:"Placement",
-        ref:"/Placement"
+        ref:"/placement"
       },
       {
         id:"Campus",
-        ref:"/Campus"
+        ref:"/campus"
       },{
         id:"Photos",
-        ref:"/Photos"
+        ref:"/photos"
       },{
         id:"About",
-        ref:"/About",
+        ref:"/about",
       },
       {
         id:"Contact",
-        ref:"/Contact"
+        ref:"/contact"
       }
     ]
     return(
