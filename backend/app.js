@@ -6,7 +6,7 @@ const cookieParser=require("cookie-parser")
 app.use(cookieParser())
 require("dotenv").config();
 app.use(cors(
-    {origin: 'http://localhost:3000',credentials: true}
+    {origin: process.env.ORIGIN,credentials: true}
 ))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))

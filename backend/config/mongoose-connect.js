@@ -8,4 +8,4 @@ mongoose.connect(process.env.MONGODB_URI+"/cism")
 (function(err){
     console.log(err)
 })
-module.exports=mongoose.connection
+module.exports=mongoose.connection 
