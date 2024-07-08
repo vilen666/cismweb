@@ -1,13 +1,21 @@
 const cors = require('cors');
+const db=require("./config/mongoose-connect")
 let express = require("express")
-let app = express()
-require("dotenv").config()
-app.use(cors())
+let app = express();
+const cookieParser=require("cookie-parser")
+app.use(cookieParser())
+require("dotenv").config();
+app.use(cors(
+    {origin: 'http://localhost:3000',credentials: true}
+))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
-app.get('/api', (req, res) => {
-    res.send('Hello from the backend!');
-  });
+
+const adminRouter = require("./routes/adminRouter")
+const indexRouter = require("./routes/indexRouter")
+app.use("/",indexRouter)
+app.use("/admin",adminRouter)
+
 app.listen(process.env.PORT,(err)=>{
     if(err){
         console.log(err)

@@ -2,15 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer';
+import { ToastContainer } from 'react-toastify';
+// import Header from './Components/Header/Header';
+// import Footer from './Components/Footer/Footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Header/>
+  <>
+    {/* <Header/> */}
+    <ToastContainer/>
     <App />
-    <Footer/>
-  </React.StrictMode>
+    {/* <Footer/> */}
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

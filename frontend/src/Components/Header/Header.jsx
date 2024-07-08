@@ -3,16 +3,16 @@ import axios from 'axios';
 import "./Header.css"
 import logo from "../imgs/1.png"
 const Header = () => {
-  const [data, setData] = useState("")
-  useEffect(() => {
-    axios.get('http://localhost:5000/api')
-      .then(response => {
-        setData(response.data);
-      })
-      .catch(error => {
-        console.error('There was an error fetching the data!', error);
-      });
-  }, []);
+  // const [data, setData] = useState("")
+  // useEffect(() => {
+  //   axios.get('http://localhost:5000')
+  //     .then(response => {
+  //       setData(response.data);
+  //     })
+  //     .catch(error => {
+  //       console.error('There was an error fetching the data!', error);
+  //     });
+  // }, []);
   const navs = [
     {
       id: "Home",
@@ -30,9 +30,6 @@ const Header = () => {
       id: "Campus",
       ref: "/campus"
     }, {
-      id: "Photos",
-      ref: "/photos"
-    }, {
       id: "About",
       ref: "/about",
     },
@@ -47,8 +44,7 @@ const Header = () => {
         <div className=' h-fit w-full flex items-center p-3 pb-1'>
           <img src={logo} alt="#" className=' w-[150px] h-[]' />
           <div className=' ml-4'>
-          {/* Calcutta Institute Of Engineering and Managenment */}
-            <div className=' text-4xl text-[#19447D] font-semibold leading-[58px] font-[PMingLiU-ExtB]'>{data}</div>
+            <div className=' text-4xl text-[#19447D] font-semibold leading-[58px] font-[PMingLiU-ExtB]'>Calcutta Institute Of Engineering and Managenment</div>
             <div className=' underline text-md font-[Poppins] font-bold'>24, 1A, Chandi Ghosh Rd, Ashok Nagar, Tollygunge, Kolkata, West Bengal 700040</div>
           </div>
         </div>
@@ -67,7 +63,7 @@ const Header = () => {
           <div className='helpLine text-[#85373D]'>Helpline No. :+91 7605027821/26/27/30 </div>
         </div>
       </div>
-      <hr className=' border-[2px] ml-1 mr-1 border-blue-950' />
+      <hr className=' border-[2px] ml-1 mr-1 mb-4 border-blue-950' />
     </>
   )
 }

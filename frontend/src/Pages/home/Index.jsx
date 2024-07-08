@@ -2,12 +2,18 @@ import React from 'react'
 import "./css/home.css"
 import img3 from "./imgs/3.png"
 import img2 from "./imgs/2.png"
+import Header from "../../Components/Header/Header"
+import Footer from "../../Components/Footer/Footer"
 const Index = () => {
   return (
     // <div className=' text-3xl'>Hello</div>
+    <>
+    <Header></Header>
     <div className=' h-fit w-full'>
       <Hero />
     </div>
+    <Footer></Footer>
+    </>
   )
 }
 
